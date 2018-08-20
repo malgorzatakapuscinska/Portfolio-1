@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    background-color: white;
+    body{
+        .first{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+
