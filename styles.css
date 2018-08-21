@@ -65,7 +65,7 @@ first .box p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 39vh;
+    height: 300px;
 }
 
 .second-row {
@@ -123,7 +123,7 @@ first .box p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 39vh;
+    height: 300px;
 }
 
 .projects-row {
@@ -151,7 +151,7 @@ first .box p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 39vh;
+    height: 300px;
 }
 
 .technology-row{
