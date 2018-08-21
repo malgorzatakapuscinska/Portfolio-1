@@ -152,7 +152,7 @@ first .box p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 39vh;
 }
 
 .technology-row{
@@ -189,5 +189,15 @@ first .box p{
 .technology .box:hover img{
     width: 100px;
     height: 100px;
+}
+
+.abc {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
 }
 
