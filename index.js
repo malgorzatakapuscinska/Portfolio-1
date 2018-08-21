@@ -13,8 +13,6 @@ var addDisplay = (hide, show) => {
     document.querySelector(show).classList.remove('hide');
 }
 
-
-
 firstRight.addEventListener('click', event => {
     event.preventDefault();
     addDisplay('.first', '.second');

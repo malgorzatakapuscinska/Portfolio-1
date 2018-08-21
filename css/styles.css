@@ -1,0 +1,152 @@
+.box-edit, * body .first-hide .box, * body .second-hide .second-flex .second-row .box, * body .about-hide .box, * body .projects-hide .projects-flex .box, * body .technology-hide .technology-flex .technology-row .box {
+  position: relative;
+  border-radius: 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #464646;
+  color: white;
+  width: 296px;
+  height: 296px;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hide-edit, * body .first-hide, * body .second-hide, * body .about-hide, * body .projects-hide, * body .technology-hide {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-edit, * body .second-hide .second-flex, * body .projects-hide .projects-flex, * body .technology-hide .technology-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.row-edit, * body .second-hide .second-flex .second-row, * body .projects-hide .projects-flex .projects-row, * body .technology-hide .technology-flex .technology-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+* body {
+  background-color: #E0E0E0;
+}
+
+* body section {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+* body .first-hide .box h1 {
+  padding: 10%;
+  font-size: 2rem;
+}
+
+* body .first-hide .box p {
+  font-size: 1.2rem;
+}
+
+* body .first-hide .box .arrowRight {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+* body .second-hide .second-flex .second-row .box {
+  width: 146px;
+  height: 146px;
+  margin: 2px;
+  transition: 1s ease;
+}
+
+* body .second-hide .second-flex .second-row .box:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  cursor: pointer;
+}
+
+* body .second-hide .second-flex .second-row .box .arrowLeft {
+  font-size: 100px;
+}
+
+* body .second-hide .second-flex .second-row .box .arrowLeft:hover {
+  cursor: pointer;
+}
+
+* body .about-hide .box .arrowLeftBig {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 80px;
+}
+
+* body .about-hide .box .arrowLeftBig:hover {
+  cursor: pointer;
+}
+
+* body .projects-hide .projects-flex .box {
+  width: 96px;
+  height: 96px;
+  margin: 2px;
+  transition: 1s ease;
+}
+
+* body .projects-hide .projects-flex .box:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  cursor: pointer;
+}
+
+* body .technology-hide .technology-flex .technology-row {
+  position: relative;
+}
+
+* body .technology-hide .technology-flex .technology-row .box {
+  flex-direction: row;
+  width: 71px;
+  height: 71px;
+  margin: 2px;
+  transition: 1s ease;
+}
+
+* body .technology-hide .technology-flex .technology-row .box:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  cursor: pointer;
+}
+
+* body .technology-hide .technology-flex .technology-row .box img {
+  width: 50px;
+  height: 50px;
+  transition: 1s ease;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

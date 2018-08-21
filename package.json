@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.24.6",
+    "npm-run-all": "^4.1.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "scripts": {
+    "watch": "npm-run-all -p watch:browsersync watch:sassprefixer",
+    "watch:browsersync": "browser-sync start --server --files css/*.css *.html",
+    "watch:sass": "node-sass --output-style expanded --source-map true -o ./css/ ./sass/styles.scss --watch",
+    "watch:autoprefixer": "onchange -d 100 css/styles.css -- autoprefixer-cli -o css/styles.prefixed.css css/styles.css",
+    "watch:sassprefixer": "npm run watch:sass && npm run watch:autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eowm/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eowm/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Eowm/Portfolio#readme"
+}
