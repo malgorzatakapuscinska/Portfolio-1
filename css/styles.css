@@ -1,4 +1,4 @@
-.box-edit, * body .first-hide .box, * body .second .second-hide .second-flex .second-row .box, * body .about .about-hide .box, * body .projects .projects-hide .projects-flex .box, * body .technology .technology-hide .technology-flex .technology-row .box {
+.box-edit, * body .first .first-hide .box, * body .second .second-hide .second-flex .second-row .box, * body .about .about-hide .box, * body .projects .projects-hide .projects-flex .box, * body .technology .technology-hide .technology-flex .technology-row .box {
   position: relative;
   border-radius: 1%;
   text-align: center;
@@ -50,7 +50,7 @@
   height: 65px;
 }
 
-.hide-edit, * body .first-hide, * body .second .second-hide, * body .about .about-hide, * body .projects .projects-hide, * body .technology .technology-hide {
+.hide-edit, * body .first .first-hide, * body .second .second-hide, * body .about .about-hide, * body .projects .projects-hide, * body .technology .technology-hide {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -93,16 +93,20 @@
   margin: 0 auto;
 }
 
-* body .first-hide .box h1 {
+* body .first {
+  transition: 2s ease;
+}
+
+* body .first .first-hide .box h1 {
   padding: 10%;
   font-size: 2rem;
 }
 
-* body .first-hide .box p {
+* body .first .first-hide .box p {
   font-size: 1.2rem;
 }
 
-* body .first-hide .box .arrowRight {
+* body .first .first-hide .box .arrowRight {
   position: absolute;
   bottom: 10%;
   right: 10%;
@@ -112,10 +116,6 @@
 
 * body .second {
   transition: 2s ease;
-}
-
-* body .second .second-hide {
-  opacity: 1;
 }
 
 * body .second .second-hide .second-flex .second-row .box {

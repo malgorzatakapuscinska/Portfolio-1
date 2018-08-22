@@ -87,6 +87,8 @@
             max-width: 400px;
             margin: 0 auto;
         }
+        .first{
+            transition: 2s ease;
         .first-hide{
             @extend .hide-edit;
                 .box {
@@ -107,11 +109,11 @@
                 }
             }
         }
+    }
         .second{
             transition: 2s ease;
         .second-hide{
             @extend .hide-edit;
-            opacity: 1;
         .second-flex { 
             @extend .flex-edit;
             .second-row {
@@ -160,7 +162,6 @@
             transition: 2s ease;
         .projects-hide {
             @extend .hide-edit;
-            
             .projects-flex{
                 @extend .flex-edit;
                 position: static;
