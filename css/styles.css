@@ -189,10 +189,6 @@
   transition: 2s ease;
 }
 
-* body .technology {
-  transition: 2s ease;
-}
-
 * body .technology .technology-hide .technology-flex .technology-row .box {
   flex-direction: row;
   width: 71px;
