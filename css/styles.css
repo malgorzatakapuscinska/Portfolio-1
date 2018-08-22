@@ -11,9 +11,42 @@
   color: white;
   width: 296px;
   height: 296px;
-  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.size {
+  border-radius: 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #464646;
+  color: white;
+  width: 96px;
+  height: 96px;
+  margin: 2px;
+  transition: 0.5s ease;
+  -webkit-box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+  position: fixed;
+  transform: scale(3.1);
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  z-index: 3;
+}
+
+.size p {
+  font-size: 8px;
+}
+
+.size img {
+  width: 45px;
+  height: 65px;
 }
 
 .hide-edit, * body .first-hide, * body .second-hide, * body .about-hide, * body .projects-hide, * body .technology-hide {
@@ -55,7 +88,7 @@
 }
 
 * body section {
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -84,7 +117,7 @@
 }
 
 * body .second-hide .second-flex .second-row .box:hover {
-  transform: scale(1.3);
+  transform: scale(1.5);
   z-index: 2;
   cursor: pointer;
 }
@@ -108,21 +141,31 @@
   cursor: pointer;
 }
 
+* body .projects-hide .projects-flex {
+  position: static;
+}
+
 * body .projects-hide .projects-flex .box {
+  position: static;
   width: 96px;
   height: 96px;
   margin: 2px;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 * body .projects-hide .projects-flex .box:hover {
-  transform: scale(1.3);
+  transform: scale(1.5);
   z-index: 2;
   cursor: pointer;
 }
 
-* body .technology-hide .technology-flex .technology-row {
-  position: relative;
+* body .projects-hide .projects-flex .box p {
+  font-size: 8px;
+}
+
+* body .projects-hide .projects-flex .box img {
+  width: 45px;
+  height: 65px;
 }
 
 * body .technology-hide .technology-flex .technology-row .box {
@@ -134,7 +177,7 @@
 }
 
 * body .technology-hide .technology-flex .technology-row .box:hover {
-  transform: scale(1.3);
+  transform: scale(1.5);
   z-index: 2;
   cursor: pointer;
 }

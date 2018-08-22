@@ -11,9 +11,40 @@
     color: white;
     width: 296px;
     height: 296px;
-    -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
-    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+}
+
+.size {
+    border-radius: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #464646;
+    color: white;
+    width: 96px;
+    height: 96px;
+    margin: 2px;
+    transition: 0.5s ease;
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    position: fixed;
+    transform: scale(3.1);
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    z-index: 3;
+    p{
+        font-size: 8px;
+    }
+    img{
+        width: 45px;
+        height: 65px;
+    }
 }
 
 .hide-edit{
@@ -52,7 +83,7 @@
     body{
         background-color: #E0E0E0;
         section{
-            max-width: 500px;
+            max-width: 400px;
             margin: 0 auto;
         }
         .first-hide{
@@ -88,7 +119,7 @@
                     margin: 2px;
                     transition: 1s ease;
                     &:hover{
-                        transform: scale(1.3);
+                        transform: scale(1.5);
                         z-index:2;
                         cursor: pointer
                     }
@@ -119,21 +150,32 @@
         }
         .projects-hide {
             @extend .hide-edit;
+            
             .projects-flex{
                 @extend .flex-edit;
+                position: static;
                 .projects-row {
                     @extend .row-edit;
                 }
                 .box {
                     @extend .box-edit;
+                    position: static;
                     width: 96px;
                     height: 96px;
                     margin: 2px;
-                    transition: 1s ease;
-                    &:hover {
-                        transform: scale(1.3);
-                        z-index:2;
-                        cursor: pointer
+                    transition: 0.5s ease;
+                    &:hover{
+                        transform: scale(1.5);
+                            z-index:2;
+                            cursor: pointer;
+
+                    }
+                    p{
+                        font-size: 8px;
+                    }
+                    img{
+                        width: 45px;
+                        height: 65px;
                     }
                 }
             }
@@ -144,7 +186,6 @@
                 @extend .flex-edit;
                 .technology-row{
                     @extend .row-edit;
-                    position: relative;
                     .box {
                         @extend .box-edit;
                         flex-direction: row;
@@ -153,7 +194,7 @@
                         margin: 2px;
                         transition: 1s ease;
                         &:hover{
-                            transform: scale(1.3);
+                            transform: scale(1.5);
                             z-index:2;
                             cursor: pointer;
                         }
