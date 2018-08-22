@@ -1,3 +1,38 @@
+.box-edit{
+    position: relative;
+    border-radius: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #464646;
+    color: white;
+    width: 296px;
+    height: 296px;
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    z-index: 2;
+}
+
+.position-edit{
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    height: 300px;
+    width: 300px;
+    transition: 2s ease;
+}
+
+.row-edit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,30 +50,9 @@
             z-index: 0;
         } 
         .first{
-            position: absolute;
-            top: calc(50% - 150px);
-            left: calc(50% - 150px);
-            height: 300px;
-            width: 300px;
-            
-            transition: 2s ease;
+            @extend .position-edit;
             .box{
-                position: relative;
-                border-radius: 1%;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                background-color: #464646;
-                color: white;
-                width: 296px;
-                height: 296px;
-                -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                z-index: 2;
+                @extend .box-edit;
                 h1{
                     padding: 10%;
                     font-size: 2rem;
@@ -56,36 +70,14 @@
             }
         }
         .second{
-            position: absolute;
-            top: calc(50% - 152px);
-            left: calc(50% - 152px);
-            height: 300px;
-            width: 300px;
-            transition: 2s ease;
+            @extend .position-edit;
             .second-row{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
+                @extend .row-edit;
                 .box{
-                position: relative;
-                border-radius: 1%;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                background-color: #464646;
-                color: white;
+                    @extend .box-edit;
                 width: 146px;
                 height: 146px;
                 margin: 2px;
-                -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                z-index: 2;
                     &:hover{
                         transform: scale(1.5);
                         z-index:3;
@@ -101,29 +93,9 @@
             }
         }
         .about {
-            position: absolute;
-            top: calc(50% - 150px);
-            left: calc(50% - 150px);
-            height: 300px;
-            width: 300px;
-            transition: 2s ease;
+            @extend .position-edit;
             .box{
-                position: relative;
-                border-radius: 1%;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                background-color: #464646;
-                color: white;
-                width: 296px;
-                height: 296px;
-                -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                z-index: 2;
+                @extend .box-edit;
                 .arrowLeftBig {
                     position: absolute;
                     top: 5%;
@@ -136,36 +108,14 @@
             }
         }
         .projects{
-            position: absolute;
-            top: calc(50% - 150px);
-            left: calc(50% - 150px);
-            height: 300px;
-            width: 300px;
-            transition: 2s ease;
+            @extend .position-edit;
             .projects-row{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
+                @extend .row-edit;
                 .box {
-                position: relative;
-                border-radius: 1%;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                background-color: #464646;
-                color: white;
+                @extend .box-edit;
                 width: 96px;
                 height: 96px;
                 margin: 2px;
-                -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                z-index: 2;
                 &:hover{
                         transform: scale(1.5);
                             z-index:3;
@@ -183,36 +133,14 @@
             }
         }
         .technology{
-            position: absolute;
-            top: calc(50% - 150px);
-            left: calc(50% - 150px);
-            height: 300px;
-            width: 300px;
-            transition: 2s ease;
+            @extend .position-edit;
             .technology-row{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
+                @extend .row-edit;
                 .box{
-                    position: relative;
-                border-radius: 1%;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                background-color: #464646;
-                color: white;
+                @extend .box-edit;
                 width: 71px;
                 height: 71px;
                 margin: 2px;
-                -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
-                z-index: 2;
                 &:hover{
                     transform: scale(1.5);
                     z-index:3;
