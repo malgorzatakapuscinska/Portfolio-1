@@ -38,6 +38,7 @@
     left: calc(50% - 48px);
     top: calc(50% - 48px);
     z-index: 3;
+    transition: 2s ease-in-out;
     p{
         font-size: 8px;
     }
@@ -106,8 +107,11 @@
                 }
             }
         }
+        .second{
+            transition: 2s ease;
         .second-hide{
             @extend .hide-edit;
+            opacity: 1;
         .second-flex { 
             @extend .flex-edit;
             .second-row {
@@ -131,8 +135,11 @@
                     }
                 }
             }
+            }
         }
         }
+        .about{
+            transition: 2s ease;
         .about-hide {
             @extend .hide-edit;
             .box{
@@ -148,6 +155,9 @@
                 }
             }
         }
+        }
+        .projects{
+            transition: 2s ease;
         .projects-hide {
             @extend .hide-edit;
             
@@ -178,8 +188,14 @@
                         height: 65px;
                     }
                 }
+                .box1{
+                    transition: 2s ease;
+                }
             }
         }
+    }
+    .technology{
+        transition: 2s ease;
         .technology-hide{
             @extend .hide-edit;
             .technology-flex {
@@ -208,10 +224,13 @@
             }
         }
     }
+    }
 }
 
 .hide {
-    display: none;
+    height: 0;
+    opacity: 0;
+    transition: 2s ease;
 } 
 
 
