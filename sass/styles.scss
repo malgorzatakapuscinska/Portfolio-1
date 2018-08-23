@@ -84,8 +84,12 @@
                         cursor: pointer
                     }
                     .arrowLeft {
-                        font-size: 100px;
+                        position: absolute;
+                        top: 10%;
+                        left:10%;
+                        font-size:30px;
                         &:hover {
+                            transform: scale(1.5);
                          cursor: pointer;
                         }
                     }
@@ -117,10 +121,8 @@
                 height: 96px;
                 margin: 2px;
                 &:hover{
-                        transform: scale(1.5);
-                            z-index:3;
-                            cursor: pointer;
-
+                    z-index:3;
+                    cursor: pointer;
                     }
                     p{
                         font-size: 8px;
@@ -129,6 +131,16 @@
                         width: 45px;
                         height: 65px;
                     }
+                }
+                .center{
+                    position: absolute;
+                    top: calc(50% - 150px);
+                    left: calc(50% - 150px);
+                    height: 300px;
+                    width: 300px;
+                    transition: 2s ease;
+                    z-index: 3;
+
                 }
             }
         }
@@ -152,9 +164,23 @@
                     transition: 1s ease;
                 }
                 }
-
             }
-
         }
+        .contact{
+            @extend .position-edit;
+            .box{
+                @extend .box-edit;
+                .arrowLeftBig {
+                    position: absolute;
+                    top: 5%;
+                    left: 5%;
+                    font-size: 80px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        
     }
 }

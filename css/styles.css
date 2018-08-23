@@ -1,4 +1,4 @@
-.box-edit, * body .first .box, * body .second .second-row .box, * body .about .box, * body .projects .projects-row .box, * body .technology .technology-row .box {
+.box-edit, * body .first .box, * body .second .second-row .box, * body .about .box, * body .projects .projects-row .box, * body .technology .technology-row .box, * body .contact .box {
   position: relative;
   border-radius: 1%;
   text-align: center;
@@ -17,7 +17,7 @@
   z-index: 2;
 }
 
-.position-edit, * body .first, * body .second, * body .about, * body .projects, * body .technology {
+.position-edit, * body .first, * body .second, * body .about, * body .projects, * body .technology, * body .contact {
   position: absolute;
   top: calc(50% - 150px);
   left: calc(50% - 150px);
@@ -85,10 +85,14 @@
 }
 
 * body .second .second-row .box .arrowLeft {
-  font-size: 100px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 30px;
 }
 
 * body .second .second-row .box .arrowLeft:hover {
+  transform: scale(1.5);
   cursor: pointer;
 }
 
@@ -110,7 +114,6 @@
 }
 
 * body .projects .projects-row .box:hover {
-  transform: scale(1.5);
   z-index: 3;
   cursor: pointer;
 }
@@ -122,6 +125,16 @@
 * body .projects .projects-row .box img {
   width: 45px;
   height: 65px;
+}
+
+* body .projects .projects-row .center {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  height: 300px;
+  width: 300px;
+  transition: 2s ease;
+  z-index: 3;
 }
 
 * body .technology .technology-row .box {
@@ -140,6 +153,17 @@
   width: 50px;
   height: 50px;
   transition: 1s ease;
+}
+
+* body .contact .box .arrowLeftBig {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 80px;
+}
+
+* body .contact .box .arrowLeftBig:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
