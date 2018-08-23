@@ -144,7 +144,24 @@
         </section>
         <section class="contact hide">
             <div class="box">
-                <i class="fa fa-angle-double-left arrowLeftBig" id='contact-left'></i>
+                    <i class="fa fa-angle-double-left arrowLeftBig" id='contact-left'></i>
+                    <h1>GET IN TOUCH</h1>
+                <form class="form" id="contactForm" method="post" action="/send-scripts.php"></form>
+                <div class="form-row">
+                        <input type="text" name="name" class="form-name" required id="field-name" data-error="You need to fill this field" placeholder="Name" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="email" class="form-email" required id="field-email" data-error="Enter valid Email" placeholder="Email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                    </div>
+                    <div class="form-row">
+                        <textarea name="InputMessage" class="form-message" required data-error="You need to fill this field" id="field-message" placeholder="Your message" pattern=".+"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="submit-btn">
+                            Send
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
         <script src="index.js"></script>
